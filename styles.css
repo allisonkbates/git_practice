@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+	--light-gray-font: #888c99;
+	--light-gray-icons: #acafbc;
+	--dark-gray-hover: #5a6173;
+	--dark-gray: #444957;
+	--black: #1e2025;
+	--lightest-red: #f29994;
+	--light-red: #ff8483;
+	--red: #ff3c41;
+	--light-green: #70CB7C;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: 'Lato', serif;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.icon-button {
+	margin-right: 8px;
+	font-size: 16px;
+}
+
+.nav {
+	background-color: #1e2025;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#codepen-box {
+	height: 32px;
+	fill: #fff;
+	cursor: pointer;
+}
+
+.nav__left, .nav__right {
+	display: flex;
+	align-items: center;
+}
+
+.nav__info {
+	margin-left: 12px;
+	cursor: pointer;
+}
+
+.nav__title {
+	font-size: 20px;
+}
+
+.nav__username {
+	color: #888c99;
+	font-size: 14px;
+}
+
+.nav__username:hover {
+	color: #fff;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+	padding: 0px 1rem;
+	margin-left: 8px;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+	background-color: var(--dark-gray);
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: var(--dark-gray-hover);
+}
+
+.heart-btn {
+	width: 52px;
+}
+
+.avatar-dropdown {
+	border-radius: 5px;
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.liked-1 {
+	color: var(--lightest-red);
+	font-size: 1.1rem;
+}
+
+.liked-2 {
+	color: var(--light-red);
+	font-size: 1.2rem;
+}
+
+.liked-3 {
+	color: var(--red);
+	font-size: 1.3rem;
+}
+
+.snackbar {
+	display: none;
+	background-color: var(--dark-gray);
+	border: 2px solid var(--light-green);
+	border-radius: 4px;
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: calc(50% - 70px);
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px;
+}
+
+.light-green {
+	color: var(--light-green);
+}
+
+.show {
+	display: flex;
+}
+
+.close-btn {
+	cursor: pointer;
+	font-size: .75rem;
+	color: var(--light-gray-icons);
+}
+
+@keyframes fadein {
+	from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
